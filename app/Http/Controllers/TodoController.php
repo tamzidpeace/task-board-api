@@ -47,6 +47,7 @@ class TodoController extends Controller
 
         try {
             $todo = Todo::find($request->id);
+            if(!isset($todo)) return $this->error('Todo not found!');
             $todo->status = $request->status;
             $todo->save();
             $all_todo = Todo::orderBy('updated_at', 'desc')->get()->groupBy('status');

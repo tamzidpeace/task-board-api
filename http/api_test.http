@@ -1,4 +1,5 @@
-@host = http://127.0.0.1:8000/api/v1/todo/
+# @host = http://127.0.0.1:8000/api/v1/todo/
+@host = https://taskboard.orbitsource.net/api/v1/todo/
 
 
 ### ==============================
